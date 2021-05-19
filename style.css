@@ -1,0 +1,352 @@
+.header-section {
+	border-bottom: 1px solid #ddd;
+	padding-top: 10px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	width: 100%;
+	background: white;
+}
+.header-section .header-logo img{
+    width: 100px;
+}
+.header-section .header-menu ul{
+    text-align: center;
+}
+.header-section .header-menu ul li {
+    display: inline-block;
+    line-height: 40px;
+}
+.header-section .header-menu ul li a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+.header-section .header-menu ul li a:hover{
+    
+}
+/* -----------DropDown Section------------ */
+.header-menu ul li{
+    position: relative;
+}
+.header-menu li ul {
+	position: absolute;
+	left: 0;
+	top: 100%;
+	width: 210px;
+	background: white;
+	padding: 0;
+	margin-top: 16px;
+    opacity: 0;
+    visibility: hidden;
+    transform: scaleY(0);
+    transform-origin: top center;
+
+}
+.header-menu ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+}
+.header-menu ul li ul{
+    transition: .4s;
+}
+.header-menu ul li ul li{
+    border-bottom: 1px solid #ddd;
+}
+.header-menu ul li ul li:first-child{
+    border-top: 1px solid #ddd;
+}
+.header-menu li ul li a:hover{}
+/* ----------Content 1----------- */
+
+.content1 {
+	background-image: url(./image/background3.jpg);
+	background-position: bottom center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 150px;
+	text-align: center;
+	color: white;
+	margin-top: 85px;
+    position: relative;
+    z-index: 9;
+
+}
+.content1::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.185);
+    z-index: -1;
+
+}
+.banner-content h4 {
+    font-size: 20px;
+}
+.banner-content h2 {
+    font-size: 50px;
+    font-weight: 600;
+    margin: 30px;
+}
+.banner-icon{
+    display: inline-block;
+    margin-top: 10px;
+}
+.banner-icon a{
+    text-decoration: none;
+    padding: 15px 20px;
+    background: white;
+    color: #808080;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 10px;
+    transition: .4s;
+}
+.banner-icon a:hover{
+    background: #9b5dff;
+    color: white;
+}
+
+/* -------Content 2---------- */
+.content2{
+    background: #f7f7f7;
+    padding-bottom: 100px;
+
+}
+.content2 .topic h2{
+    font-size: 45px;
+    padding: 30px 0;
+    text-align: center;
+}
+.content2 .topic p{
+    font-size: 15px;
+    text-align: center;
+}
+.content2 .box-inner {
+    margin-top: 40px;
+    background: white;
+    
+}
+.first-content{
+    padding: 30px;
+    text-align: left;
+    transition: .5s;
+}
+.first-content h4 {
+    font-weight: 600;
+}
+.first-content h1 {
+    font-size: 55px;
+    font-weight: 700;
+    margin: 20px 0;
+    background: #f5f5f5;
+}
+.first-content h1 span{
+    font-size: 20px;
+}
+.first-content h5 {
+    margin-bottom: 20px;
+}
+.first-content p {
+    border-bottom: 1px solid #ddd;
+}
+.second-content ul {
+    margin-top: -15px;
+    margin-bottom: 65px;
+}
+.second-content {
+    padding-bottom: 50px;
+    text-align: left;
+}
+.second-content ul li i {
+    color: #e79230;
+    margin-right: 30px;
+    font-size: 25px;
+}
+.second-content ul li {
+    list-style: none;
+    color: #7d7d7d;
+    line-height: 50px;
+    font-weight: 600;
+}
+.second-content .button{
+    text-align: center;
+}
+.second-content .button a{
+    text-decoration: none;
+    padding: 15px 20px;
+    background: white;
+    color: #808080;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(146, 193, 255, 0.453);
+    transition: .4s;
+}
+.second-content .button a:hover{
+    background: #9b5dffa1;
+    color: white;
+}
+/* COntent 3 */
+.content3{
+    padding: 70px  0;
+}
+.topic h2 {
+    font-size: 40px;
+    margin-bottom: 70px;
+}
+.box {
+    border: 5px double #e79230ad;
+}
+.box .image{
+    overflow: hidden;
+}
+.box .image img{
+    max-width: 100%;
+    transition: .5s;
+}
+.box .image img:hover{
+    transform: scale(1.2);
+}
+.box .text {
+    padding: 10px 0 0 25px;
+}
+/* -------Content 4-------- */
+.content4{
+    background: #f5f5f5;
+    padding: 70px 0;
+}
+.content4 .email{
+    width: 400px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+.email .form{
+    border: 2px solid #aa972cc9;
+    height: 50px;
+}
+.content4 .button2{
+    display: inline-block;
+}
+.content4 .button2 a{
+    font-size: 20px;
+    text-decoration: none;
+    padding: 13px 45px;
+    background: #aa972c;
+    color: black;
+    border-radius: 10px;
+    transition: .5s;
+
+}
+.content4 .button2 a:hover{
+    box-shadow: 0 0 20px rgba(146, 193, 255, 0.453);
+    background: #9b5dff;
+    color: white;
+}
+/* --------------Content 5------------------- */
+.content5{
+    padding-bottom: 0;
+}
+.content5 h2{
+    font-weight: 600;
+    font-size: 50px;
+}
+.content5 .image2 {
+    width: 530px;
+}
+.content5 .image2 img{
+    max-width: 100%;
+}
+.content5 .list{
+    padding: 25px 0;
+    color: #5b5b5b;
+}
+.content5 .list h5{
+    font-weight: 700;
+}
+
+/* --------------Content 6------------------- */
+
+.content6{
+    background: #f5f5f5;
+    padding-bottom: 80px;
+}
+.content6 .box2{
+    width: 800px;
+    margin: auto;
+}
+.box-inner{
+    text-align: center;
+    background: white;
+    box-shadow: 0 0 20px rgba(146, 193, 255, 0.453);
+    display: inline-block;
+
+}
+.speech{
+    padding: 30px;
+    border-bottom: 1px solid #ddd;
+}
+.bottom{
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background: #f5f5f5;
+}
+.bottom .image3 {
+    width: 75px;
+    margin: auto;
+    margin-right: -10px;
+}
+.bottom .image3 img{
+    max-width: 100%;
+    border: 5px solid #aa972c;
+}
+.users h4 {
+    font-size: 18px;
+}
+.users p {
+    font-size: 15px;
+    color: #8a8a8a;
+}
+/* ---------------Content 7-------------------- */
+
+.content7{
+    padding: 50px;
+    width: 900px;
+    margin: auto;
+}
+.content7 .box3 {
+    width: 510px;
+    margin: auto;
+}
+.content7 .fix {
+    padding: 20px 2px;
+    margin-left: 0px;
+}
+.content7 .fix2{
+    border: 2px solid #aa972c;
+}
+.content7 .button3 {
+    width: 200px;
+    margin: auto;
+    padding: 0;
+    margin-top: 35px;
+}
+.content7 .button3 a {
+    font-size: 20px;
+    text-decoration: none;
+    padding: 12px 75px;
+    background: #aa972c;
+    color: black;
+    border-radius: 10px;
+    transition: .5s;
+}
+.content7 .button3 a:hover{
+    box-shadow: 0 0 20px rgb(51, 102, 169);
+    background: #9b5dff;
+    color: white;
+}
